@@ -1,0 +1,21 @@
+﻿@model BlogProjesi_Entity.Models.Siniflar.Yetenekler
+@{
+    ViewBag.Title = "YetenekGetir";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<form class="form-group" method="post">
+
+    <div style="margin-bottom:20px">
+        <label>Yetenek Adı </label>
+        @Html.TextBoxFor(x => x.YetenekAdi, new { @class = "form-control" })
+    </div>
+    <div style="margin-bottom:20px">
+        <label>Yetenek Yüzdesi</label>
+        @Html.TextBoxFor(x => x.YetenekYuzde, new { @class = "form-control" })
+    </div>
+    <div>
+        <button class="btn btn-primary"> Güncelle</button>
+    </div>
+</form>
+

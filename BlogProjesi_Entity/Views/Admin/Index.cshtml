@@ -1,0 +1,32 @@
+﻿@using BlogProjesi_Entity.Models.Siniflar
+@model List<Yetenekler>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<table class="table table-bordered">
+    <tr>
+        <th>ID</th>
+        <th>YETENEK ADI</th>
+        <th>YÜZDE</th>
+        <th style="text-align:center">Sil</th>
+        <th style="text-align:center">Güncelle</th>
+    </tr>
+
+    @foreach( var x in Model)
+    {
+<tr>
+    <td>@x.YetenekId</td>
+    <td>@x.YetenekAdi</td>
+    <td>@x.YetenekYuzde</td>
+    <td align="center">
+        <a href="/Admin/YetenekSil/@x.YetenekId" class="btn btn-danger ">Sİl</a>
+    </td>
+    <td align="center">
+        <a href="/Admin/YetenekGetir/@x.YetenekId"  class="btn btn-success ">Güncelle</a>
+    </td>
+</tr>
+    }
+</table>
+
