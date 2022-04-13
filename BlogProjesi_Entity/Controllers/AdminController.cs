@@ -51,7 +51,7 @@ namespace BlogProjesi_Entity.Controllers
         [HttpPost]
         public ActionResult YetenekGetir (Yetenekler parametre)
         {
-            var deger = baglanti.Yeteneklers.Find(parametre.YetenekId);
+            var deger = baglanti.Yeteneklers.Find(parametre.Id);
             deger.YetenekAdi = parametre.YetenekAdi;
             deger.YetenekYuzde = parametre.YetenekYuzde;
             baglanti.SaveChanges();

@@ -5,7 +5,7 @@
 }
 
 <form class="form-group" method="post">
-
+    @Model.Id
     <div style="margin-bottom:20px">
         <label>Yetenek Adı </label>
         @Html.TextBoxFor(x => x.YetenekAdi, new { @class = "form-control" })

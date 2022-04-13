@@ -17,14 +17,14 @@
     @foreach( var x in Model)
     {
 <tr>
-    <td>@x.YetenekId</td>
+    <td>@x.Id</td>
     <td>@x.YetenekAdi</td>
     <td>@x.YetenekYuzde</td>
     <td align="center">
-        <a href="/Admin/YetenekSil/@x.YetenekId" class="btn btn-danger ">Sİl</a>
+        <a href="/Admin/YetenekSil/@x.Id" class="btn btn-danger ">Sİl</a>
     </td>
     <td align="center">
-        <a href="/Admin/YetenekGetir/@x.YetenekId"  class="btn btn-success ">Güncelle</a>
+        <a href="/Admin/YetenekGetir/@x.Id"  class="btn btn-success ">Güncelle</a>
     </td>
 </tr>
     }

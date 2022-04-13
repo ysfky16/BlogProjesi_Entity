@@ -9,7 +9,7 @@ namespace BlogProjesi_Entity.Models.Siniflar
     public class Yetenekler
     {
         [Key]
-        public int YetenekId { get; set; }
+        public int Id { get; set; }
 
         [StringLength(100)]
         public string YetenekAdi { get; set; }
